@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Nextcent</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* header part */
+      header {
+        background-color: rgba(245, 247, 250, 1);
+      }
+      header > div {
+        width: 1440px;
+        padding-left: 105px;
+        padding-right: 120px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        padding-top: 22px;
+        padding-bottom: 22px;
+      }
+      nav {
+        margin-left: 166.01px;
+        margin-right: 124.5px;
+        display: flex;
+        gap: 50px;
+      }
+      nav a {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 400;
+        color: rgba(24, 25, 31, 1);
+        text-decoration: none;
+      }
+      nav a:hover {
+        color: rgba(76, 175, 79, 1);
+      }
+      .register {
+        display: flex;
+        gap: 14px;
+      }
+      .register button {
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 6px;
+      }
+      .register button:nth-child(1) {
+        width: 77px;
+        height: 40px;
+        background-color: rgba(245, 247, 250, 1);
+        color: rgba(76, 175, 79, 1);
+      }
+      .register button:nth-child(2) {
+        width: 91px;
+        height: 40px;
+        background-color: rgba(76, 175, 79, 1);
+        color: rgba(255, 255, 255, 1);
+      }
+      /* hero part */
+      .hero-container {
+        background-color: rgba(245, 247, 250, 1);
+      }
+      .hero {
+        width: 1152px;
+        height: 599px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+      }
+      .hero > div:nth-child(1) {
+        width: 657px;
+      }
+      .hero h1 {
+        font-size: 64px;
+        line-height: 76px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      .hero p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 16px;
+        margin-bottom: 32px;
+      }
+      .hero button {
+        width: 128px;
+        height: 52px;
+        border-radius: 4px;
+        background-color: rgba(76, 175, 79, 1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(255, 255, 255, 1);
+        border: none;
+      }
+      .hero-img {
+        width: 391px;
+        height: 407px;
+        background-image: url(images/hero.png);
+        background-size: cover;
+      }
+      .dot-box {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        position: absolute;
+        bottom: 16px;
+        left: 553px;
+      }
+      .dot-box div {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: rgba(76, 175, 79, 1);
+      }
+      .dot-box div:nth-child(2),
+      .dot-box div:nth-child(3) {
+        opacity: 0.3;
+      }
+
+      /* client part */
+      .client-container {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .client {
+        width: 1152px;
+        margin: 40px auto;
+        text-align: center;
+      }
+      .client h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      .client p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+      .client div:nth-child(2) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 0;
+      }
+
+      /* system part */
+      .system-container {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .system {
+        width: 1152px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .system h2 {
+        width: 542px;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0 auto;
+      }
+      .system p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 8px;
+        margin-bottom: 16px;
+      }
+      .community-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .community-box div {
+        width: 299px;
+        height: 260px;
+        padding: 24px 16px;
+        box-sizing: border-box;
+        box-shadow: 0 2px 4px rgba(171, 190, 209, 0.2);
+      }
+      .community-box div:nth-child(2) {
+        height: 280px;
+      }
+      h3 {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: rgba(77, 77, 77, 1);
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h3::before {
+        content: "";
+        width: 65px;
+        height: 56px;
+        background-size: cover;
+        display: block;
+        margin-bottom: 16px;
+      }
+      .community-box div:nth-child(1) > h3::before {
+        background-image: url(images/system1.png);
+      }
+      .community-box div:nth-child(2) > h3::before {
+        background-image: url(images/system2.png);
+      }
+      .community-box div:nth-child(3) > h3:before {
+        background-image: url(images/system3.png);
+      }
+      .community-box div:nth-child(3) > h3 {
+        padding: 0 18px;
+      }
+      .community-box p {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(113, 113, 113, 1);
+        padding: 0 8px;
+      }
+      .community-box div:nth-child(2) > p {
+        padding: 0 13.5px;
+      }
+
+      /* pixelgrade part */
+      .pixelgrade-container {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .pixelgrade {
+        width: 1152px;
+        height: 433px;
+        margin-top: 42px;
+        margin-bottom: 48px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .pixelgrade > div {
+        width: 661px;
+        padding-right: 60px;
+        box-sizing: border-box;
+      }
+      .pixelgrade h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      .pixelgrade p {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 16px;
+        margin-bottom: 32px;
+      }
+      .pixelgrade button {
+        width: 151;
+        height: 52px;
+        background-color: rgba(76, 175, 79, 1);
+        border-radius: 4px;
+        border: none;
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        box-sizing: border-box;
+      }
+
+      /* help part */
+      .help-container {
+        background-color: rgba(245, 247, 250, 1);
+      }
+      .help-container > div {
+        width: 1152px;
+        height: 288px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+      }
+      .help-container > div > div {
+        width: 540px;
+      }
+      .help-container h2 {
+        width: 408px;
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      /* span ingej bichij bloh esejh */
+      span {
+        color: rgba(76, 175, 79, 1);
+      }
+      .help-container p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(24, 25, 31, 1);
+        padding-top: 8px;
+        margin: 0;
+      }
+      .help-activities {
+        width: 540px;
+        height: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        align-items: center;
+      }
+      .help-unit {
+        width: 255px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        gap: 16px;
+      }
+      .unit-text {
+        width: 191px;
+      }
+      .unit-text div:nth-child(1) {
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 700;
+        color: rgba(77, 77, 77, 1);
+      }
+      .unit-text div:nth-child(2) {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(113, 113, 113, 1);
+      }
+
+      /* design part */
+      .design-container {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .design-container > div {
+        width: 1152px;
+        margin: 48px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .design-container > div div {
+        width: 661px;
+        padding-right: 60px;
+        box-sizing: border-box;
+      }
+      .design-container h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      .design-container p {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 16px;
+        margin-bottom: 32px;
+      }
+      .design-container button {
+        width: 151px;
+        height: 52px;
+        border-radius: 4px;
+        border: none;
+        padding: 14px 32px;
+        background-color: rgba(76, 175, 79, 1);
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+      }
+
+      /* customer part */
+      .customer-container {
+        background-color: rgba(245, 247, 250, 1);
+      }
+      .customer-container > div {
+        width: 1152px;
+        margin: 0 auto;
+        padding: 33px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+      }
+      .customer-img {
+        width: 326px;
+        height: 326px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(171, 190, 209, 0.4);
+      }
+      .customer {
+        width: 748px;
+      }
+      .customer .text {
+        margin-bottom: 32px;
+      }
+      .customer .text div:nth-child(1) {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgba(113, 113, 113, 1);
+      }
+      .customer .text div:nth-child(2) {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgba(76, 175, 79, 1);
+        padding-top: 16px;
+        padding-bottom: 8px;
+      }
+      .customer .text div:nth-child(3) {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(137, 147, 158, 1);
+      }
+      .customer > div:nth-child(2) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .customer-logo {
+        width: 493px;
+        display: flex;
+        justify-content: space-between;
+      }
+      .customer-logo + div {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .customer-logo + div > div {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgba(76, 175, 79, 1);
+        padding-left: 8px;
+      }
+
+      /* marketing part */
+      .marketing-container {
+        background-color: rgba(255, 255, 255, 1);
+      }
+      .marketing {
+        width: 1152px;
+        padding-top: 48px;
+        padding-bottom: 94.6px;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .marketing h2 {
+        font-size: 36px;
+        line-height: 44px;
+        font-weight: 600;
+        color: rgba(77, 77, 77, 1);
+        margin: 0;
+      }
+      .marketing p {
+        font-size: 16px;
+        line-height: 24px;
+        color: rgba(113, 113, 113, 1);
+        margin-top: 8px;
+        margin-bottom: 16pxs;
+        padding: 0 241px;
+      }
+      .marketing-brochure {
+        display: flex;
+        justify-content: space-between;
+      }
+      .marketing-brochure > div {
+        width: 368px;
+        height: 366px;
+        background-repeat: no-repeat;
+      }
+      .marketing-brochure > div:nth-child(1) {
+        background-image: url(images/market1.png);
+      }
+      .marketing-brochure > div:nth-child(2) {
+        background-image: url(images/market2.png);
+      }
+      .marketing-brochure > div:nth-child(3) {
+        background-image: url(images/market3.png);
+      }
+      .marketing-text {
+        padding-top: 190px;
+        padding-left: 25.5px;
+        padding-right: 25.5px;
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; font-family: 'Inter'">
+    <main>
+      <!-- header -->
+      <header>
+        <div>
+          <a href="https://www.google.com/">
+            <img src="images/Logo.png" />
+          </a>
+          <nav>
+            <a href="https://www.google.com/">Home</a>
+            <a href="https://www.google.com/">Service</a>
+            <a href="https://www.google.com/">Feature</a>
+            <a href="https://www.google.com/">Product</a>
+            <a href="https://www.google.com/">Testimonial</a>
+            <a href="https://www.google.com/">FAQ</a>
+          </nav>
+          <div class="register">
+            <button>Login</button>
+            <button>Sign up</button>
+          </div>
+        </div>
+      </header>
+
+      <!-- hero -->
+      <section class="hero-container">
+        <div class="hero">
+          <div>
+            <h1>
+              Lessons and insights
+              <span style="color: rgba(76, 175, 79, 1)">from 8 years</span>
+            </h1>
+            <p>
+              Where to grow your business as a photographer: site or social
+              media?
+            </p>
+            <button>Register</button>
+          </div>
+          <div class="hero-img"></div>
+          <div class="dot-box">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- client part -->
+      <section class="client-container">
+        <div class="client">
+          <div>
+            <h2>Our Clients</h2>
+            <p>We have been working with some Fortune 500+ clients</p>
+          </div>
+          <div>
+            <img src="images/client1.png" />
+            <img src="images/client2.png" />
+            <img src="images/client3.png" />
+            <img src="images/client4.png" />
+            <img src="images/client5.png" />
+            <img src="images/client6.png" />
+            <img src="images/client7.png" />
+          </div>
+        </div>
+      </section>
+
+      <!-- system part -->
+      <section class="system-container">
+        <div class="system">
+          <div>
+            <h2>Manage your entire community in a single system</h2>
+            <p>Who is Nextcent suitable for?</p>
+          </div>
+          <div class="community-box">
+            <div>
+              <h3>Membership Organisations</h3>
+              <p>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div>
+              <h3>National Associations</h3>
+              <p>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+            <div>
+              <h3>Clubs And Groups</h3>
+              <p>
+                Our membership management software provides full automation of
+                membership renewals and payments
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- pixelgrade part -->
+      <section class="pixelgrade-container">
+        <div class="pixelgrade">
+          <img src="images/rafiki.png" />
+          <div>
+            <h2>The unseen of spending three years at Pixelgrade</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+              elementum pulvinar odio.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- help part -->
+      <section class="help-container">
+        <div>
+          <div>
+            <h2>Helping a local <span>business reinvent itself</span></h2>
+            <p>We reached here with our hard work and dedication</p>
+          </div>
+          <div class="help-activities">
+            <div class="help-unit">
+              <img src="images/help1.png" />
+              <div class="unit-text">
+                <div>2,245,341</div>
+                <div>Members</div>
+              </div>
+            </div>
+            <div class="help-unit">
+              <img src="images/help2.png" />
+              <div class="unit-text">
+                <div>46,328</div>
+                <div>Clubs</div>
+              </div>
+            </div>
+            <div class="help-unit">
+              <img src="images/help3.png" />
+              <div class="unit-text">
+                <div>828,867</div>
+                <div>Event Bookings</div>
+              </div>
+            </div>
+            <div class="help-unit">
+              <img src="images/help4.png" />
+              <div class="unit-text">
+                <div>1,926,436</div>
+                <div>Payments</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- design part -->
+      <section class="design-container">
+        <div>
+          <img src="images/pana.png" />
+          <div>
+            <h2>How to design your site footer like we did</h2>
+            <p>
+              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+              augue nec tincidunt molestie, massa nunc varius arcu, at
+              scelerisque elit erat a magna. Donec quis erat at libero ultrices
+              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
+              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
+              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
+              commodo faucibus efficitur quis massa. Praesent felis est, finibus
+              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
+              ipsum id gravida.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- customer part -->
+      <section class="customer-container">
+        <div>
+          <img class="customer-img" src="images/customer.png" />
+          <div class="customer">
+            <div class="text">
+              <div>
+                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
+                eu enim metus. Vivamus sed libero ornare, tristique quam in,
+                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
+                laoreet elit at ligula molestie, nec molestie mi blandit.
+                Suspendisse cursus tellus sed augue ultrices, quis tristique
+                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
+                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
+                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
+                eget efficitur libero condimentum id. Curabitur id nibh id sem
+                dignissim finibus ac sit amet magna.
+              </div>
+              <div>Tim Smith</div>
+              <div>British Dragon Boat Racing Association</div>
+            </div>
+            <div>
+              <div class="customer-logo">
+                <img src="images/cust1.png" />
+                <img src="images/cust2.png" />
+                <img src="images/client3.png" />
+                <img src="images/client4.png" />
+                <img src="images/client5.png" />
+                <img src="images/cust6.png" />
+              </div>
+              <div>
+                <div>Meet all customers</div>
+                <img src="images/Right.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- marketing part -->
+      <section class="marketing-container">
+        <div class="marketing">
+          <div>
+            <h2>Caring is the new marketing</h2>
+            <p>
+              The Nexcent blog is the best place to read about the latest
+              membership insights, trends and more. See who's joining the
+              community, read about how our community are increasing their
+              membership income and lot's more.​
+            </p>
+          </div>
+          <div class="marketing-brochure">
+            <div>
+              <div class="marketing-text">
+                <div>
+                  Creating Streamlined Safeguarding Processes with OneRen
+                </div>
+                <div>
+                  <div>Readmore</div>
+                  <img />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </div>
+                <div>
+                  <div>Readmore</div>
+                  <img />
+                </div>
+              </div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  Revamping the Membership Model with Triathlon Australia
+                </div>
+                <div>
+                  <div>Readmore</div>
+                  <img />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- umuh -->
+    <div style="background-color: #ffffff">
+      <div
+        style="
+          width: 1152px;
+          padding: 0px 144px;
+          margin-top: 48px;
+          margin-bottom: 94.6px;
+          margin-right: auto;
+          margin-right: auto;
+          text-align: center;
+        "
+      >
+        <div style="margin-bottom: 16px">
+          <h1
+            style="
+              font-size: 36px;
+              line-height: 44px;
+              color: #4d4d4d;
+              font-family: 'Inter', sans-serif;
+              margin-top: 0px;
+              margin-bottom: 8px;
+            "
+          >
+            Caring is the new marketing
+          </h1>
+
+          <p
+            style="
+              font-size: 16px;
+              line-height: 24px;
+              color: #717171;
+              font-family: 'Inter', sans-serif;
+              margin: 0 241px;
+            "
+          >
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more. See who's joining the
+            community, read about how our community are increasing their
+            membership income and lot's more.​
+          </p>
+        </div>
+
+        <div style="display: flex; justify-content: space-between">
+          <div
+            style="
+              width: 368px;
+              height: 366px;
+              border-radius: 8px;
+              background-image: url(image\ 18.png);
+              background-repeat: no-repeat;
+            "
+          >
+            <div
+              style="
+                background-color: #f5f7fa;
+                padding: 16px;
+                margin-top: 190px;
+                margin-left: 25.5px;
+                margin-right: 25.5px;
+                box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+              "
+            >
+              <div
+                style="
+                  font-size: 20px;
+                  line-height: 28px;
+                  color: #717171;
+                  font-family: 'Inter', sans-serif;
+                  margin-bottom: 16px;
+                "
+              >
+                Creating Streamlined Safeguarding Processes with OneRen
+              </div>
+
+              <button
+                style="
+                  display: flex;
+                  justify-content: space-between;
+                  width: 285px;
+                  height: 44px;
+                  padding: 8px 77px;
+                  background-color: transparent;
+                  border: none;
+                "
+              >
+                <div style="font-size: 20px; line-height: 28px; color: #4caf4f">
+                  Readmore
+                </div>
+
+                <div>
+                  <img src="Right.png" style="height: 24px; margin: 2px 0" />
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <div style="width: 368px; height: 366px">
+            <div>
+              <img src="image 19.png" style="border-radius: 8px" />
+
+              <div style="margin: 0 25.6px">
+                <div
+                  style="
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: #717171;
+                    margin-bottom: 16px;
+                  "
+                >
+                  What are your safeguarding responsibilities and how can you
+                  manage them?
+                </div>
+
+                <button
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 285px;
+                    padding: 8px 77px;
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 20px;
+                      line-height: 28px;
+                      font-weight: 600px;
+                      color: #4caf4f;
+                    "
+                  >
+                    Readmore
+                  </div>
+
+                  <div>
+                    <img src="Right.png" style="margin: 2px 0" />
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div style="width: 368px; height: 366px">
+            <div>
+              <img src="image 20.png" style="border-radius: 8px" />
+
+              <div style="margin: 0 25.5px">
+                <div
+                  style="
+                    font-size: 20px;
+                    line-height: 28px;
+                    font-weight: 600;
+                    color: #717171;
+                    margin-bottom: 16px;
+                  "
+                >
+                  Revamping the Membership Model with Triathlon Australia
+                </div>
+
+                <button
+                  style="
+                    display: flex;
+                    justify-content: space-between;
+                    width: 285px;
+                    padding: 8px 77px;
+                    background-color: transparent;
+                    border: none;
+                    box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
+                  "
+                >
+                  <div
+                    style="
+                      font-size: 20px;
+                      line-height: 28px;
+                      font-weight: 600;
+                      color: #4caf4f;
+                    "
+                  >
+                    Readmore
+                  </div>
+
+                  <img src="Right.png" style="margin: 2px 0" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background-color: #f5f7fa">
+      <div
+        style="
+          width: 887px;
+          padding: 32px 276.5px;
+          margin: 0 auto;
+          text-align: center;
+        "
+      >
+        <div
+          style="
+            font-size: 64px;
+            line-height: 76px;
+            color: #263238;
+            margin-bottom: 32px;
+          "
+        >
+          Pellentesque suscipit fringilla libero eu.
+        </div>
+        <button
+          style="
+            display: flex;
+            justify-content: space-between;
+            margin: 0 354.5px;
+            width: 178px;
+            height: 52px;
+            padding: 14px 32px;
+            background-color: #4caf4f;
+            border: none;
+            border-radius: 4px;
+          "
+        >
+          <div style="font-size: 16px; line-height: 24px; color: #ffffff">
+            Get a Demo
+          </div>
+          <img src="Right 2.png" style="height: 16px; margin: 4px 0" />
+        </button>
+      </div>
+    </div>
+
+    <div style="background-color: #263238">
+      <div
+        style="
+          display: flex;
+          justify-content: space-between;
+          width: 1110px;
+          padding: 64px 165px;
+          margin: 0 auto;
+          font-family: 'Inter';
+        "
+      >
+        <div style="width: 350px">
+          <img src="Logo (14).png" style="width: 191px" />
+
+          <div
+            style="
+              padding: 40px 0;
+              color: #f5f7fa;
+              font-size: 14px;
+              line-height: 20px;
+            "
+          >
+            <div style="margin-bottom: 8px">Copyright © 2020 Nexcent ltd.</div>
+
+            <div>All rights reserved</div>
+          </div>
+
+          <div style="display: flex; gap: 16px">
+            <img src="Social Icons.png" />
+            <img src="Social Icons 2.png" />
+            <img src="Social Icons 3.png" />
+            <img src="Social Icons 4.png" />
+          </div>
+        </div>
+
+        <div
+          style="
+            display: flex;
+            justify-content: space-between;
+            width: 635px;
+            font-size: 20px;
+            line-height: 28px;
+          "
+        >
+          <div style="width: 160px">
+            <div style="color: #ffffff; margin-bottom: 24px">Company</div>
+
+            <div style="font-size: 14px; line-height: 20px; color: #f5f7fa">
+              <div style="margin-bottom: 12px">About us</div>
+              <div style="margin-bottom: 12px">Blog</div>
+              <div style="margin-bottom: 12px">Contact us</div>
+              <div style="margin-bottom: 12px">Pricing</div>
+              <div>Testimonials</div>
+            </div>
+          </div>
+
+          <div style="width: 160px">
+            <div style="color: #ffffff; margin-bottom: 24px">Support</div>
+
+            <div style="font-size: 14px; line-height: 20px; color: #f5f7fa">
+              <div style="margin-bottom: 12px">Help center</div>
+              <div style="margin-bottom: 12px">Terms of service</div>
+              <div style="margin-bottom: 12px">Legal</div>
+              <div style="margin-bottom: 12px">Privacy policy</div>
+              <div>Status</div>
+            </div>
+          </div>
+
+          <div style="width: 255px">
+            <div style="color: #ffffff; margin-bottom: 24px">
+              Stay up to date
+            </div>
+
+            <div
+              style="
+                display: flex;
+                justify-content: space-between;
+                padding: 9px 12px;
+                border-radius: 8px;
+                background-color: rgba(255, 255, 255, 0.2);
+              "
+            >
+              <div
+                style="
+                  font-size: 14px;
+                  line-height: 20px;
+                  color: #d9dbe1;
+                  margin-bottom: 2px;
+                "
+              >
+                Your email address
+              </div>
+
+              <img src="send.png" style="margin: 2px 2px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
