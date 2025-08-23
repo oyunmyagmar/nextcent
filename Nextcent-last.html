@@ -392,13 +392,12 @@
       /* customer part */
       .customer-container {
         background-color: rgba(245, 247, 250, 1);
-        width: 1152px;
+        width: 1440px;
         margin: 0 auto;
-        padding: 33px 0;
+        padding: 32px 144px;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        box-sizing: border-box;
       }
       .customer-img {
         width: 326px;
@@ -408,62 +407,79 @@
       }
       .customer {
         width: 748px;
+        padding: 1px 0;
+        box-sizing: border-box;
       }
-      .customer .text {
-        margin-bottom: 32px;
-      }
-      .customer .text div:nth-child(1) {
+      .customer h4 {
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
         color: rgba(113, 113, 113, 1);
+        margin: 0;
+        padding-bottom: 16px;
       }
-      .customer .text div:nth-child(2) {
+      .customer .name {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .customer .name div:nth-child(1) {
         font-size: 20px;
         line-height: 28px;
         font-weight: 600;
         color: rgba(76, 175, 79, 1);
-        padding-top: 16px;
-        padding-bottom: 8px;
       }
-      .customer .text div:nth-child(3) {
+      .customer .name div:nth-child(2) {
         font-size: 16px;
         line-height: 24px;
         color: rgba(137, 147, 158, 1);
       }
-      .customer > div:nth-child(2) {
+      .logo-meet {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        gap: 32px;
       }
-      .customer-logo {
+      .logo {
         width: 493px;
+        height: 48px;
         display: flex;
         justify-content: space-between;
-      }
-      .customer-logo + div {
-        display: flex;
         align-items: center;
-        gap: 8px;
       }
-      .customer-logo + div > div {
+      .logo-meet a {
         font-size: 20px;
         line-height: 28px;
         font-weight: 600;
         color: rgba(76, 175, 79, 1);
-        padding-left: 8px;
+        padding: 10px 8px;
+        position: relative;
+        text-decoration: none;
+      }
+      .logo-meet a::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(images/Right.png);
+        background-size: cover;
+        display: inline-block;
+        position: absolute;
+        top: 12px;
       }
 
       /* marketing part */
       .marketing-container {
         background-color: rgba(255, 255, 255, 1);
-      }
-      .marketing {
-        width: 1152px;
+        width: 1440px;
+        padding: 0 144px;
         padding-top: 48px;
         padding-bottom: 94.6px;
+        box-sizing: border-box;
         margin: 0 auto;
         text-align: center;
+      }
+      .marketing {
+        padding: 0 262px;
+        margin-bottom: 16px;
       }
       .marketing h2 {
         font-size: 36px;
@@ -477,8 +493,6 @@
         line-height: 24px;
         color: rgba(113, 113, 113, 1);
         margin-top: 8px;
-        margin-bottom: 16pxs;
-        padding: 0 241px;
       }
       .marketing-brochure {
         display: flex;
@@ -488,6 +502,9 @@
         width: 368px;
         height: 366px;
         background-repeat: no-repeat;
+        border-radius: 8px;
+        display: flex;
+        justify-content: center;
       }
       .marketing-brochure > div:nth-child(1) {
         background-image: url(images/market1.png);
@@ -498,13 +515,45 @@
       .marketing-brochure > div:nth-child(3) {
         background-image: url(images/market3.png);
       }
-      .marketing-text {
+      .brochure-text {
         width: 317px;
         height: 176px;
         border-radius: 8px;
         padding: 16px;
         background-color: rgba(245, 247, 250, 1);
-        box-shadow: 0 8px 16px rgba(171, 190, 209, 0.4);
+        box-shadow: 0 8px 16px 0 rgba(171, 190, 209, 0.4);
+        margin-top: 190px;
+        box-sizing: border-box;
+      }
+      .brochure-text p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgba(113, 113, 113, 1);
+        margin: 0;
+        padding-bottom: 16px;
+      }
+      .brochure-text button {
+        width: 285px;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        color: rgba(76, 175, 79, 1);
+        background-color: transparent;
+        padding: 8px 0;
+
+        border: none;
+        position: relative;
+      }
+      .brochure-text button::after {
+        content: "";
+        width: 24px;
+        height: 24px;
+        background-image: url(images/Right.png);
+        background-size: cover;
+        display: inline-block;
+        position: absolute;
+        top: 8.5px;
       }
     </style>
   </head>
@@ -677,25 +726,24 @@
       <section class="customer-container">
         <img class="customer-img" src="images/customer.png" />
         <div class="customer">
-          <div class="text">
-            <div>
-              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
-              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
-              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
-              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
-              elit at ligula molestie, nec molestie mi blandit. Suspendisse
-              cursus tellus sed augue ultrices, quis tristique nulla sodales.
-              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
-              potenti. Quisque malesuada enim sapien, vitae placerat ante
-              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
-              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
-              amet magna.
-            </div>
+          <h4>
+            Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+            lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+            enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+            enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit
+            at ligula molestie, nec molestie mi blandit. Suspendisse cursus
+            tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse
+            eget lorem eu turpis vestibulum pretium. Suspendisse potenti.
+            Quisque malesuada enim sapien, vitae placerat ante feugiat eget.
+            Quisque vulputate odio neque, eget efficitur libero condimentum id.
+            Curabitur id nibh id sem dignissim finibus ac sit amet magna.
+          </h4>
+          <div class="name">
             <div>Tim Smith</div>
             <div>British Dragon Boat Racing Association</div>
           </div>
-          <div>
-            <div class="customer-logo">
+          <div class="logo-meet">
+            <div class="logo">
               <img src="images/cust1.png" />
               <img src="images/cust2.png" />
               <img src="images/client3.png" />
@@ -703,10 +751,7 @@
               <img src="images/client5.png" />
               <img src="images/cust6.png" />
             </div>
-            <div>
-              <div>Meet all customers</div>
-              <img src="images/Right.png" />
-            </div>
+            <a href="" class="meet">Meet all customers</a>
           </div>
         </div>
       </section>
@@ -714,49 +759,37 @@
       <!-- marketing part -->
       <section class="marketing-container">
         <div class="marketing">
+          <h2>Caring is the new marketing</h2>
+          <p>
+            The Nexcent blog is the best place to read about the latest
+            membership insights, trends and more. See who's joining the
+            community, read about how our community are increasing their
+            membership income and lot's more.​
+          </p>
+        </div>
+        <div class="marketing-brochure">
           <div>
-            <h2>Caring is the new marketing</h2>
-            <p>
-              The Nexcent blog is the best place to read about the latest
-              membership insights, trends and more. See who's joining the
-              community, read about how our community are increasing their
-              membership income and lot's more.​
-            </p>
+            <div class="brochure-text">
+              <p>Creating Streamlined Safeguarding Processes with OneRen</p>
+              <a href=""><button>Readmore</button></a>
+            </div>
           </div>
-          <div class="marketing-brochure">
-            <div>
-              <div class="marketing-text">
-                <div>
-                  Creating Streamlined Safeguarding Processes with OneRen
-                </div>
-                <div>
-                  <div>Readmore</div>
-                  <img />
-                </div>
-              </div>
+          <div>
+            <div class="brochure-text">
+              <p>
+                What are your safeguarding responsibilities and how can<br />
+                you manage them?
+              </p>
+              <a href=""><button>Readmore</button></a>
             </div>
-            <div>
-              <div>
-                <div>
-                  What are your safeguarding responsibilities and how can you
-                  manage them?
-                </div>
-                <div>
-                  <div>Readmore</div>
-                  <img />
-                </div>
-              </div>
-            </div>
-            <div>
-              <div>
-                <div>
-                  Revamping the Membership Model with Triathlon Australia
-                </div>
-                <div>
-                  <div>Readmore</div>
-                  <img />
-                </div>
-              </div>
+          </div>
+          <div>
+            <div class="brochure-text">
+              <p>
+                Revamping the Membership Model with Triathlon<br />
+                Australia
+              </p>
+              <a href=""><button>Readmore</button></a>
             </div>
           </div>
         </div>
