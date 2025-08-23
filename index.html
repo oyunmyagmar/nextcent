@@ -19,6 +19,8 @@
       /* header part */
       header {
         background-color: rgba(245, 247, 250, 1);
+      }
+      .header-container {
         width: 1440px;
         padding-left: 105px;
         padding-right: 120px;
@@ -67,8 +69,10 @@
         color: rgba(255, 255, 255, 1);
       }
       /* hero part */
-      .hero-container {
+      .section-hero {
         background-color: rgba(245, 247, 250, 1);
+      }
+      .hero-container {
         width: 1440px;
         height: 599px;
         padding: 0 144px;
@@ -92,6 +96,7 @@
       .hero p {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 16px;
         margin-bottom: 32px;
@@ -132,8 +137,10 @@
       }
 
       /* client part */
-      .client-container {
+      .section-client {
         background-color: rgba(255, 255, 255, 1);
+      }
+      .client-container {
         width: 1440px;
         padding: 0 144px;
         box-sizing: border-box;
@@ -150,6 +157,7 @@
       .client p {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 8px;
         margin-bottom: 16px;
@@ -161,8 +169,10 @@
         padding: 25px 0;
       }
       /* system part */
-      .system-container {
+      .section-system {
         background-color: rgba(255, 255, 255, 1);
+      }
+      .system-container {
         width: 1440px;
         padding: 0 144px;
         box-sizing: border-box;
@@ -183,6 +193,7 @@
       .system p {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 8px;
         margin-bottom: 16px;
@@ -235,6 +246,7 @@
       .community-box p {
         font-size: 14px;
         line-height: 20px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         padding: 0 8px;
       }
@@ -243,8 +255,10 @@
       }
 
       /* pixelgrade part */
-      .pixelgrade-container {
+      .section-pixelgrade {
         background-color: rgba(255, 255, 255, 1);
+      }
+      .pixelgrade-container {
         width: 1440px;
         height: 433px;
         padding: 0 144px;
@@ -271,6 +285,7 @@
       .pixelgrade p {
         font-size: 14px;
         line-height: 20px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 16px;
         margin-bottom: 32px;
@@ -288,8 +303,10 @@
       }
 
       /* help part */
-      .help-container {
+      .section-help {
         background-color: rgba(245, 247, 250, 1);
+      }
+      .help-container {
         width: 1440px;
         padding: 64px 144px;
         box-sizing: border-box;
@@ -315,6 +332,7 @@
       .help p {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 400;
         color: rgba(24, 25, 31, 1);
         padding-top: 8px;
         margin: 0;
@@ -349,8 +367,10 @@
       }
 
       /* design part */
-      .design-container {
+      .section-design {
         background-color: rgba(255, 255, 255, 1);
+      }
+      .design-container {
         width: 1440px;
         margin: 48px auto;
         padding: 0 144px;
@@ -374,6 +394,7 @@
       .design p {
         font-size: 14px;
         line-height: 20px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 16px;
         margin-bottom: 32px;
@@ -390,8 +411,10 @@
       }
 
       /* customer part */
-      .customer-container {
+      .section-customer {
         background-color: rgba(245, 247, 250, 1);
+      }
+      .customer-container {
         width: 1440px;
         margin: 0 auto;
         padding: 32px 144px;
@@ -467,8 +490,10 @@
       }
 
       /* marketing part */
-      .marketing-container {
+      .section-marketing {
         background-color: rgba(255, 255, 255, 1);
+      }
+      .marketing-container {
         width: 1440px;
         padding: 0 144px;
         padding-top: 48px;
@@ -491,6 +516,7 @@
       .marketing p {
         font-size: 16px;
         line-height: 24px;
+        font-weight: 400;
         color: rgba(113, 113, 113, 1);
         margin-top: 8px;
       }
@@ -541,7 +567,6 @@
         color: rgba(76, 175, 79, 1);
         background-color: transparent;
         padding: 8px 0;
-
         border: none;
         position: relative;
       }
@@ -555,32 +580,183 @@
         position: absolute;
         top: 8.5px;
       }
+
+      /* demo part */
+      .section-demo {
+        background-color: rgba(245, 247, 250, 1);
+      }
+      .demo-container {
+        width: 1440px;
+        height: 300px;
+        padding: 32px 276.5px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+      }
+      .demo-container h1 {
+        font-size: 64px;
+        line-height: 76px;
+        font-weight: 600;
+        color: rgba(38, 50, 56, 1);
+        margin: 0;
+      }
+      .demo-container button {
+        width: 178px;
+        background-color: rgba(76, 175, 79, 1);
+        padding: 14px 32px;
+        border: none;
+        border-radius: 4px;
+        display: flex;
+        gap: 8px;
+      }
+      .demo-container button div {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+      }
+      .demo-container button img {
+        width: 16px;
+        height: 16px;
+        padding: 4px 0;
+      }
+
+      /* footer part */
+      footer {
+        background-color: rgba(38, 50, 56, 1);
+      }
+      .footer-container {
+        width: 1440px;
+        height: 328px;
+        padding: 64px 165px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        color: rgba(255, 255, 255, 1);
+      }
+      .logo-part {
+        width: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+      }
+      .logo-part img {
+        width: 191px;
+        height: 29.67px;
+      }
+      .logo-part .rights {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(245, 247, 250, 1);
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .logo-part .rights p {
+        margin: 0;
+      }
+      .sns-img {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+      }
+      .sns-img img {
+        width: 32px;
+        height: 32px;
+      }
+      .links-part {
+        width: 635px;
+        display: flex;
+        gap: 30px;
+      }
+      .link {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+      }
+      .link p {
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 600;
+        margin: 0;
+      }
+      .link div {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+      }
+      .link div a {
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(245, 247, 250, 1);
+        text-decoration: none;
+      }
+      .uptodate {
+        width: 255px;
+      }
+      .uptodate div {
+        height: 40px;
+        padding: 10px 0;
+        padding-left: 12px;
+        box-sizing: border-box;
+        background-color: rgba(217, 219, 225, 0.2);
+        border-radius: 8px;
+        border: none;
+      }
+      .uptodate div p {
+        margin: 0;
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 400;
+        color: rgba(217, 219, 225, 1);
+        position: relative;
+      }
+      .uptodate div p::after {
+        content: "";
+        width: 18px;
+        height: 18px;
+        background-image: url(images/send.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: inline-block;
+        position: absolute;
+        top: 2px;
+        right: 12px;
+      }
     </style>
   </head>
 
   <body>
-    <main>
-      <!-- header -->
-      <header>
-        <a href="https://www.google.com/">
+    <!-- header -->
+    <header>
+      <div class="header-container">
+        <a href="">
           <img src="images/Logo.png" />
         </a>
         <nav>
-          <a href="https://www.google.com/">Home</a>
-          <a href="https://www.google.com/">Service</a>
-          <a href="https://www.google.com/">Feature</a>
-          <a href="https://www.google.com/">Product</a>
-          <a href="https://www.google.com/">Testimonial</a>
-          <a href="https://www.google.com/">FAQ</a>
+          <a href="">Home</a>
+          <a href="">Service</a>
+          <a href="">Feature</a>
+          <a href="">Product</a>
+          <a href="">Testimonial</a>
+          <a href="">FAQ</a>
         </nav>
         <div class="register">
           <button>Login</button>
           <button>Sign up</button>
         </div>
-      </header>
+      </div>
+    </header>
 
-      <!-- hero -->
-      <section class="hero-container">
+    <!-- hero -->
+    <section class="section-hero">
+      <div class="hero-container">
         <div class="hero">
           <h1>
             Lessons and insights
@@ -597,10 +773,12 @@
           <div></div>
           <div></div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- client part -->
-      <section class="client-container">
+    <!-- client part -->
+    <section class="section-client">
+      <div class="client-container">
         <div class="client">
           <h2>Our Clients</h2>
           <p>We have been working with some Fortune 500+ clients</p>
@@ -614,10 +792,12 @@
           <img src="images/client6.png" />
           <img src="images/client7.png" />
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- system part -->
-      <section class="system-container">
+    <!-- system part -->
+    <section class="section-system">
+      <div class="system-container">
         <div class="system">
           <h2>Manage your entire community in a single system</h2>
           <p>Who is Nextcent suitable for?</p>
@@ -645,10 +825,12 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- pixelgrade part -->
-      <section class="pixelgrade-container">
+    <!-- pixelgrade part -->
+    <section class="section-pixelgrade">
+      <div class="pixelgrade-container">
         <img src="images/rafiki.png" />
         <div class="pixelgrade">
           <h2>The unseen of spending three years at Pixelgrade</h2>
@@ -662,10 +844,12 @@
           </p>
           <button>Learn More</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- help part -->
-      <section class="help-container">
+    <!-- help part -->
+    <section class="section-help">
+      <div class="help-container">
         <div class="help">
           <h2>Helping a local <span>business reinvent itself</span></h2>
           <p>We reached here with our hard work and dedication</p>
@@ -700,10 +884,12 @@
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- design part -->
-      <section class="design-container">
+    <!-- design part -->
+    <section class="section-design">
+      <div class="design-container">
         <img src="images/pana.png" />
         <div class="design">
           <h2>How to design your site footer like we did</h2>
@@ -720,10 +906,12 @@
           </p>
           <button>Learn More</button>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- customer part -->
-      <section class="customer-container">
+    <!-- customer part -->
+    <section class="section-customer">
+      <div class="customer-container">
         <img class="customer-img" src="images/customer.png" />
         <div class="customer">
           <h4>
@@ -754,10 +942,12 @@
             <a href="" class="meet">Meet all customers</a>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <!-- marketing part -->
-      <section class="marketing-container">
+    <!-- marketing part -->
+    <section class="section-marketing">
+      <div class="marketing-container">
         <div class="marketing">
           <h2>Caring is the new marketing</h2>
           <p>
@@ -793,340 +983,70 @@
             </div>
           </div>
         </div>
-      </section>
-    </main>
-
-    <!-- umuh -->
-    <div style="background-color: #ffffff">
-      <div
-        style="
-          width: 1152px;
-          padding: 0px 144px;
-          margin-top: 48px;
-          margin-bottom: 94.6px;
-          margin-right: auto;
-          margin-right: auto;
-          text-align: center;
-        "
-      >
-        <div style="margin-bottom: 16px">
-          <h1
-            style="
-              font-size: 36px;
-              line-height: 44px;
-              color: #4d4d4d;
-              font-family: 'Inter', sans-serif;
-              margin-top: 0px;
-              margin-bottom: 8px;
-            "
-          >
-            Caring is the new marketing
-          </h1>
-
-          <p
-            style="
-              font-size: 16px;
-              line-height: 24px;
-              color: #717171;
-              font-family: 'Inter', sans-serif;
-              margin: 0 241px;
-            "
-          >
-            The Nexcent blog is the best place to read about the latest
-            membership insights, trends and more. See who's joining the
-            community, read about how our community are increasing their
-            membership income and lot's more.​
-          </p>
-        </div>
-
-        <div style="display: flex; justify-content: space-between">
-          <div
-            style="
-              width: 368px;
-              height: 366px;
-              border-radius: 8px;
-              background-image: url(image\ 18.png);
-              background-repeat: no-repeat;
-            "
-          >
-            <div
-              style="
-                background-color: #f5f7fa;
-                padding: 16px;
-                margin-top: 190px;
-                margin-left: 25.5px;
-                margin-right: 25.5px;
-                box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
-              "
-            >
-              <div
-                style="
-                  font-size: 20px;
-                  line-height: 28px;
-                  color: #717171;
-                  font-family: 'Inter', sans-serif;
-                  margin-bottom: 16px;
-                "
-              >
-                Creating Streamlined Safeguarding Processes with OneRen
-              </div>
-
-              <button
-                style="
-                  display: flex;
-                  justify-content: space-between;
-                  width: 285px;
-                  height: 44px;
-                  padding: 8px 77px;
-                  background-color: transparent;
-                  border: none;
-                "
-              >
-                <div style="font-size: 20px; line-height: 28px; color: #4caf4f">
-                  Readmore
-                </div>
-
-                <div>
-                  <img src="Right.png" style="height: 24px; margin: 2px 0" />
-                </div>
-              </button>
-            </div>
-          </div>
-
-          <div style="width: 368px; height: 366px">
-            <div>
-              <img src="image 19.png" style="border-radius: 8px" />
-
-              <div style="margin: 0 25.6px">
-                <div
-                  style="
-                    font-size: 20px;
-                    line-height: 28px;
-                    font-weight: 600;
-                    color: #717171;
-                    margin-bottom: 16px;
-                  "
-                >
-                  What are your safeguarding responsibilities and how can you
-                  manage them?
-                </div>
-
-                <button
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    width: 285px;
-                    padding: 8px 77px;
-                    background-color: transparent;
-                    border: none;
-                    box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 20px;
-                      line-height: 28px;
-                      font-weight: 600px;
-                      color: #4caf4f;
-                    "
-                  >
-                    Readmore
-                  </div>
-
-                  <div>
-                    <img src="Right.png" style="margin: 2px 0" />
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <div style="width: 368px; height: 366px">
-            <div>
-              <img src="image 20.png" style="border-radius: 8px" />
-
-              <div style="margin: 0 25.5px">
-                <div
-                  style="
-                    font-size: 20px;
-                    line-height: 28px;
-                    font-weight: 600;
-                    color: #717171;
-                    margin-bottom: 16px;
-                  "
-                >
-                  Revamping the Membership Model with Triathlon Australia
-                </div>
-
-                <button
-                  style="
-                    display: flex;
-                    justify-content: space-between;
-                    width: 285px;
-                    padding: 8px 77px;
-                    background-color: transparent;
-                    border: none;
-                    box-shadow: 0px 8px 16px rgba(171, 190, 209, 0.4);
-                  "
-                >
-                  <div
-                    style="
-                      font-size: 20px;
-                      line-height: 28px;
-                      font-weight: 600;
-                      color: #4caf4f;
-                    "
-                  >
-                    Readmore
-                  </div>
-
-                  <img src="Right.png" style="margin: 2px 0" />
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </div>
+    </section>
 
-    <div style="background-color: #f5f7fa">
-      <div
-        style="
-          width: 887px;
-          padding: 32px 276.5px;
-          margin: 0 auto;
-          text-align: center;
-        "
-      >
-        <div
-          style="
-            font-size: 64px;
-            line-height: 76px;
-            color: #263238;
-            margin-bottom: 32px;
-          "
-        >
-          Pellentesque suscipit fringilla libero eu.
-        </div>
-        <button
-          style="
-            display: flex;
-            justify-content: space-between;
-            margin: 0 354.5px;
-            width: 178px;
-            height: 52px;
-            padding: 14px 32px;
-            background-color: #4caf4f;
-            border: none;
-            border-radius: 4px;
-          "
-        >
-          <div style="font-size: 16px; line-height: 24px; color: #ffffff">
-            Get a Demo
-          </div>
-          <img src="Right 2.png" style="height: 16px; margin: 4px 0" />
+    <!-- demo part -->
+    <section class="section-demo">
+      <div class="demo-container">
+        <h1>
+          Pellentesque suscipit<br />
+          fringilla libero eu.
+        </h1>
+        <button>
+          <div>Get a Demo</div>
+          <img src="images/RightWhite.png" />
         </button>
       </div>
-    </div>
+    </section>
 
-    <div style="background-color: #263238">
-      <div
-        style="
-          display: flex;
-          justify-content: space-between;
-          width: 1110px;
-          padding: 64px 165px;
-          margin: 0 auto;
-          font-family: 'Inter';
-        "
-      >
-        <div style="width: 350px">
-          <img src="Logo (14).png" style="width: 191px" />
-
-          <div
-            style="
-              padding: 40px 0;
-              color: #f5f7fa;
-              font-size: 14px;
-              line-height: 20px;
-            "
-          >
-            <div style="margin-bottom: 8px">Copyright © 2020 Nexcent ltd.</div>
-
-            <div>All rights reserved</div>
+    <!-- footer part -->
+    <footer>
+      <div class="footer-container">
+        <div class="logo-part">
+          <a href="">
+            <img src="images/LogoWhite.png" />
+          </a>
+          <div class="rights">
+            <p>Copyright © 2020 Nexcent ltd.</p>
+            <p>All rights reserved</p>
           </div>
-
-          <div style="display: flex; gap: 16px">
-            <img src="Social Icons.png" />
-            <img src="Social Icons 2.png" />
-            <img src="Social Icons 3.png" />
-            <img src="Social Icons 4.png" />
+          <div class="sns-img">
+            <a href=""><img src="images/sns-insta.png" /> </a>
+            <a href=""><img src="images/sns-web.png" /></a>
+            <a href=""><img src="images/sns-tw.png" /></a>
+            <a href=""><img src="images/sns-tube.png" /></a>
           </div>
         </div>
-
-        <div
-          style="
-            display: flex;
-            justify-content: space-between;
-            width: 635px;
-            font-size: 20px;
-            line-height: 28px;
-          "
-        >
-          <div style="width: 160px">
-            <div style="color: #ffffff; margin-bottom: 24px">Company</div>
-
-            <div style="font-size: 14px; line-height: 20px; color: #f5f7fa">
-              <div style="margin-bottom: 12px">About us</div>
-              <div style="margin-bottom: 12px">Blog</div>
-              <div style="margin-bottom: 12px">Contact us</div>
-              <div style="margin-bottom: 12px">Pricing</div>
-              <div>Testimonials</div>
+        <div class="links-part">
+          <div class="link">
+            <p>Company</p>
+            <div>
+              <a href="">About us</a>
+              <a href="">Blog</a>
+              <a href="">Contact us</a>
+              <a href="">Pricing</a>
+              <a href="">Testimonials</a>
             </div>
           </div>
-
-          <div style="width: 160px">
-            <div style="color: #ffffff; margin-bottom: 24px">Support</div>
-
-            <div style="font-size: 14px; line-height: 20px; color: #f5f7fa">
-              <div style="margin-bottom: 12px">Help center</div>
-              <div style="margin-bottom: 12px">Terms of service</div>
-              <div style="margin-bottom: 12px">Legal</div>
-              <div style="margin-bottom: 12px">Privacy policy</div>
-              <div>Status</div>
+          <div class="link">
+            <p>Support</p>
+            <div>
+              <a href="">Help center</a>
+              <a href="">Terms of service</a>
+              <a href="">Legal</a>
+              <a href="">Privacy policy</a>
+              <a href="">Status</a>
             </div>
           </div>
-
-          <div style="width: 255px">
-            <div style="color: #ffffff; margin-bottom: 24px">
-              Stay up to date
-            </div>
-
-            <div
-              style="
-                display: flex;
-                justify-content: space-between;
-                padding: 9px 12px;
-                border-radius: 8px;
-                background-color: rgba(255, 255, 255, 0.2);
-              "
-            >
-              <div
-                style="
-                  font-size: 14px;
-                  line-height: 20px;
-                  color: #d9dbe1;
-                  margin-bottom: 2px;
-                "
-              >
-                Your email address
-              </div>
-
-              <img src="send.png" style="margin: 2px 2px" />
+          <div class="link uptodate">
+            <p>Stay up to date</p>
+            <div>
+              <p>Your email address</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   </body>
 </html>
