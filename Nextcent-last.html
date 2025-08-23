@@ -23,24 +23,23 @@
         padding-left: 105px;
         padding-right: 120px;
         margin: 0 auto;
-        box-sizing: border-box;
         display: flex;
         align-items: center;
+        justify-content: space-between;
         padding-top: 22px;
         padding-bottom: 22px;
-      }
-      header > div {
+        box-sizing: border-box;
       }
       nav {
         margin-left: 166.01px;
         margin-right: 124.5px;
         display: flex;
+        align-items: center;
         gap: 50px;
       }
       nav a {
         font-size: 16px;
         line-height: 24px;
-        font-weight: 400;
         color: rgba(24, 25, 31, 1);
         text-decoration: none;
       }
@@ -55,36 +54,32 @@
         font-size: 14px;
         line-height: 20px;
         font-weight: 500;
-        padding: 10px 20px;
+        padding: 10px 21.5px;
         border: none;
         border-radius: 6px;
       }
       .register button:nth-child(1) {
-        width: 77px;
-        height: 40px;
         background-color: rgba(245, 247, 250, 1);
         color: rgba(76, 175, 79, 1);
       }
       .register button:nth-child(2) {
-        width: 91px;
-        height: 40px;
         background-color: rgba(76, 175, 79, 1);
         color: rgba(255, 255, 255, 1);
       }
       /* hero part */
       .hero-container {
         background-color: rgba(245, 247, 250, 1);
-      }
-      .hero {
-        width: 1152px;
+        width: 1440px;
         height: 599px;
+        padding: 0 144px;
         margin: 0 auto;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
       }
-      .hero > div:nth-child(1) {
+      .hero {
         width: 657px;
       }
       .hero h1 {
@@ -102,23 +97,20 @@
         margin-bottom: 32px;
       }
       .hero button {
-        width: 128px;
-        height: 52px;
-        border-radius: 4px;
-        background-color: rgba(76, 175, 79, 1);
-        display: flex;
-        justify-content: center;
-        align-items: center;
         font-size: 16px;
         line-height: 24px;
+        font-weight: 500;
         color: rgba(255, 255, 255, 1);
+        background-color: rgba(76, 175, 79, 1);
+        padding: 14px 34px;
         border: none;
+        border-radius: 4px;
       }
       .hero-img {
         width: 391px;
         height: 407px;
         background-image: url(images/hero.png);
-        background-size: cover;
+        background-size: contain;
       }
       .dot-box {
         display: flex;
@@ -126,7 +118,7 @@
         gap: 8px;
         position: absolute;
         bottom: 16px;
-        left: 553px;
+        left: 697px;
       }
       .dot-box div {
         width: 10px;
@@ -142,9 +134,9 @@
       /* client part */
       .client-container {
         background-color: rgba(255, 255, 255, 1);
-      }
-      .client {
-        width: 1152px;
+        width: 1440px;
+        padding: 0 144px;
+        box-sizing: border-box;
         margin: 40px auto;
         text-align: center;
       }
@@ -162,29 +154,31 @@
         margin-top: 8px;
         margin-bottom: 16px;
       }
-      .client div:nth-child(2) {
+      .client-imgs {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 25px 0;
       }
-
       /* system part */
       .system-container {
         background-color: rgba(255, 255, 255, 1);
-      }
-      .system {
-        width: 1152px;
+        width: 1440px;
+        padding: 0 144px;
+        box-sizing: border-box;
         margin: 0 auto;
         text-align: center;
       }
+      .system {
+        padding: 0 305px;
+        margin: 0;
+      }
       .system h2 {
-        width: 542px;
         font-size: 36px;
         line-height: 44px;
         font-weight: 600;
+        margin: 0;
         color: rgba(77, 77, 77, 1);
-        margin: 0 auto;
       }
       .system p {
         font-size: 16px;
@@ -213,7 +207,7 @@
         line-height: 36px;
         font-weight: 700;
         color: rgba(77, 77, 77, 1);
-        margin: 0 auto;
+        margin: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -251,19 +245,18 @@
       /* pixelgrade part */
       .pixelgrade-container {
         background-color: rgba(255, 255, 255, 1);
-      }
-      .pixelgrade {
-        width: 1152px;
+        width: 1440px;
         height: 433px;
+        padding: 0 144px;
+        margin: 0 auto;
         margin-top: 42px;
         margin-bottom: 48px;
-        margin-left: auto;
-        margin-right: auto;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .pixelgrade > div {
+      .pixelgrade {
         width: 661px;
         padding-right: 60px;
         box-sizing: border-box;
@@ -283,35 +276,32 @@
         margin-bottom: 32px;
       }
       .pixelgrade button {
-        width: 151;
-        height: 52px;
-        background-color: rgba(76, 175, 79, 1);
-        border-radius: 4px;
-        border: none;
-        padding: 14px 32px;
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
+        background-color: rgba(76, 175, 79, 1);
+        padding: 14px 34.5px;
+        border: none;
+        border-radius: 4px;
         box-sizing: border-box;
       }
 
       /* help part */
       .help-container {
         background-color: rgba(245, 247, 250, 1);
-      }
-      .help-container > div {
-        width: 1152px;
-        height: 288px;
+        width: 1440px;
+        padding: 64px 144px;
+        box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin: 0 auto;
       }
-      .help-container > div > div {
+      .help {
         width: 540px;
       }
-      .help-container h2 {
+      .help h2 {
         width: 408px;
         font-size: 36px;
         line-height: 44px;
@@ -319,11 +309,10 @@
         color: rgba(77, 77, 77, 1);
         margin: 0;
       }
-      /* span ingej bichij bloh esejh */
       span {
         color: rgba(76, 175, 79, 1);
       }
-      .help-container p {
+      .help p {
         font-size: 16px;
         line-height: 24px;
         color: rgba(24, 25, 31, 1);
@@ -340,7 +329,6 @@
       }
       .help-unit {
         width: 255px;
-        height: 60px;
         display: flex;
         align-items: center;
         gap: 16px;
@@ -363,51 +351,47 @@
       /* design part */
       .design-container {
         background-color: rgba(255, 255, 255, 1);
-      }
-      .design-container > div {
-        width: 1152px;
+        width: 1440px;
         margin: 48px auto;
+        padding: 0 144px;
+        box-sizing: border-box;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-      .design-container > div div {
+      .design {
         width: 661px;
         padding-right: 60px;
         box-sizing: border-box;
       }
-      .design-container h2 {
+      .design h2 {
         font-size: 36px;
         line-height: 44px;
         font-weight: 600;
         color: rgba(77, 77, 77, 1);
         margin: 0;
       }
-      .design-container p {
+      .design p {
         font-size: 14px;
         line-height: 20px;
         color: rgba(113, 113, 113, 1);
         margin-top: 16px;
         margin-bottom: 32px;
       }
-      .design-container button {
-        width: 151px;
-        height: 52px;
-        border-radius: 4px;
-        border: none;
-        padding: 14px 32px;
-        background-color: rgba(76, 175, 79, 1);
+      .design button {
         font-size: 16px;
         line-height: 24px;
         font-weight: 500;
         color: rgba(255, 255, 255, 1);
+        background-color: rgba(76, 175, 79, 1);
+        padding: 14px 34.5px;
+        border: none;
+        border-radius: 4px;
       }
 
       /* customer part */
       .customer-container {
         background-color: rgba(245, 247, 250, 1);
-      }
-      .customer-container > div {
         width: 1152px;
         margin: 0 auto;
         padding: 33px 0;
@@ -549,132 +533,121 @@
       <!-- hero -->
       <section class="hero-container">
         <div class="hero">
-          <div>
-            <h1>
-              Lessons and insights
-              <span style="color: rgba(76, 175, 79, 1)">from 8 years</span>
-            </h1>
-            <p>
-              Where to grow your business as a photographer: site or social
-              media?
-            </p>
-            <button>Register</button>
-          </div>
-          <div class="hero-img"></div>
-          <div class="dot-box">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
+          <h1>
+            Lessons and insights
+            <span style="color: rgba(76, 175, 79, 1)">from 8 years</span>
+          </h1>
+          <p>
+            Where to grow your business as a photographer: site or social media?
+          </p>
+          <button>Register</button>
+        </div>
+        <div class="hero-img"></div>
+        <div class="dot-box">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </section>
 
       <!-- client part -->
       <section class="client-container">
         <div class="client">
-          <div>
-            <h2>Our Clients</h2>
-            <p>We have been working with some Fortune 500+ clients</p>
-          </div>
-          <div>
-            <img src="images/client1.png" />
-            <img src="images/client2.png" />
-            <img src="images/client3.png" />
-            <img src="images/client4.png" />
-            <img src="images/client5.png" />
-            <img src="images/client6.png" />
-            <img src="images/client7.png" />
-          </div>
+          <h2>Our Clients</h2>
+          <p>We have been working with some Fortune 500+ clients</p>
+        </div>
+        <div class="client-imgs">
+          <img src="images/client1.png" />
+          <img src="images/client2.png" />
+          <img src="images/client3.png" />
+          <img src="images/client4.png" />
+          <img src="images/client5.png" />
+          <img src="images/client6.png" />
+          <img src="images/client7.png" />
         </div>
       </section>
 
       <!-- system part -->
       <section class="system-container">
         <div class="system">
+          <h2>Manage your entire community in a single system</h2>
+          <p>Who is Nextcent suitable for?</p>
+        </div>
+        <div class="community-box">
           <div>
-            <h2>Manage your entire community in a single system</h2>
-            <p>Who is Nextcent suitable for?</p>
+            <h3>Membership Organisations</h3>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
           </div>
-          <div class="community-box">
-            <div>
-              <h3>Membership Organisations</h3>
-              <p>
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </div>
-            <div>
-              <h3>National Associations</h3>
-              <p>
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </div>
-            <div>
-              <h3>Clubs And Groups</h3>
-              <p>
-                Our membership management software provides full automation of
-                membership renewals and payments
-              </p>
-            </div>
+          <div>
+            <h3>National Associations</h3>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
+          </div>
+          <div>
+            <h3>Clubs And Groups</h3>
+            <p>
+              Our membership management software provides full automation of
+              membership renewals and payments
+            </p>
           </div>
         </div>
       </section>
 
       <!-- pixelgrade part -->
       <section class="pixelgrade-container">
+        <img src="images/rafiki.png" />
         <div class="pixelgrade">
-          <img src="images/rafiki.png" />
-          <div>
-            <h2>The unseen of spending three years at Pixelgrade</h2>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
-              amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
-              Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
-              tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
-              Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
-              elementum pulvinar odio.
-            </p>
-            <button>Learn More</button>
-          </div>
+          <h2>The unseen of spending three years at Pixelgrade</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet justo ipsum. Sed accumsan quam vitae est varius fringilla.
+            Pellentesque placerat vestibulum lorem sed porta. Nullam mattis
+            tristique iaculis. Nullam pulvinar sit amet risus pretium auctor.
+            Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec
+            elementum pulvinar odio.
+          </p>
+          <button>Learn More</button>
         </div>
       </section>
 
       <!-- help part -->
       <section class="help-container">
-        <div>
-          <div>
-            <h2>Helping a local <span>business reinvent itself</span></h2>
-            <p>We reached here with our hard work and dedication</p>
+        <div class="help">
+          <h2>Helping a local <span>business reinvent itself</span></h2>
+          <p>We reached here with our hard work and dedication</p>
+        </div>
+        <div class="help-activities">
+          <div class="help-unit">
+            <img src="images/help1.png" />
+            <div class="unit-text">
+              <div>2,245,341</div>
+              <div>Members</div>
+            </div>
           </div>
-          <div class="help-activities">
-            <div class="help-unit">
-              <img src="images/help1.png" />
-              <div class="unit-text">
-                <div>2,245,341</div>
-                <div>Members</div>
-              </div>
+          <div class="help-unit">
+            <img src="images/help2.png" />
+            <div class="unit-text">
+              <div>46,328</div>
+              <div>Clubs</div>
             </div>
-            <div class="help-unit">
-              <img src="images/help2.png" />
-              <div class="unit-text">
-                <div>46,328</div>
-                <div>Clubs</div>
-              </div>
+          </div>
+          <div class="help-unit">
+            <img src="images/help3.png" />
+            <div class="unit-text">
+              <div>828,867</div>
+              <div>Event Bookings</div>
             </div>
-            <div class="help-unit">
-              <img src="images/help3.png" />
-              <div class="unit-text">
-                <div>828,867</div>
-                <div>Event Bookings</div>
-              </div>
-            </div>
-            <div class="help-unit">
-              <img src="images/help4.png" />
-              <div class="unit-text">
-                <div>1,926,436</div>
-                <div>Payments</div>
-              </div>
+          </div>
+          <div class="help-unit">
+            <img src="images/help4.png" />
+            <div class="unit-text">
+              <div>1,926,436</div>
+              <div>Payments</div>
             </div>
           </div>
         </div>
@@ -682,61 +655,57 @@
 
       <!-- design part -->
       <section class="design-container">
-        <div>
-          <img src="images/pana.png" />
-          <div>
-            <h2>How to design your site footer like we did</h2>
-            <p>
-              Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
-              augue nec tincidunt molestie, massa nunc varius arcu, at
-              scelerisque elit erat a magna. Donec quis erat at libero ultrices
-              mollis. In hac habitasse platea dictumst. Vivamus vehicula leo
-              dui, at porta nisi facilisis finibus. In euismod augue vitae nisi
-              ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla
-              commodo faucibus efficitur quis massa. Praesent felis est, finibus
-              et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus
-              ipsum id gravida.
-            </p>
-            <button>Learn More</button>
-          </div>
+        <img src="images/pana.png" />
+        <div class="design">
+          <h2>How to design your site footer like we did</h2>
+          <p>
+            Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor,
+            augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque
+            elit erat a magna. Donec quis erat at libero ultrices mollis. In hac
+            habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi
+            facilisis finibus. In euismod augue vitae nisi ultricies, non
+            aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus
+            efficitur quis massa. Praesent felis est, finibus et nisi ac,
+            hendrerit venenatis libero. Donec consectetur faucibus ipsum id
+            gravida.
+          </p>
+          <button>Learn More</button>
         </div>
       </section>
 
       <!-- customer part -->
       <section class="customer-container">
-        <div>
-          <img class="customer-img" src="images/customer.png" />
-          <div class="customer">
-            <div class="text">
-              <div>
-                Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
-                lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin
-                eu enim metus. Vivamus sed libero ornare, tristique quam in,
-                gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi
-                laoreet elit at ligula molestie, nec molestie mi blandit.
-                Suspendisse cursus tellus sed augue ultrices, quis tristique
-                nulla sodales. Suspendisse eget lorem eu turpis vestibulum
-                pretium. Suspendisse potenti. Quisque malesuada enim sapien,
-                vitae placerat ante feugiat eget. Quisque vulputate odio neque,
-                eget efficitur libero condimentum id. Curabitur id nibh id sem
-                dignissim finibus ac sit amet magna.
-              </div>
-              <div>Tim Smith</div>
-              <div>British Dragon Boat Racing Association</div>
+        <img class="customer-img" src="images/customer.png" />
+        <div class="customer">
+          <div class="text">
+            <div>
+              Maecenas dignissim justo eget nulla rutrum molestie. Maecenas
+              lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu
+              enim metus. Vivamus sed libero ornare, tristique quam in, gravida
+              enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet
+              elit at ligula molestie, nec molestie mi blandit. Suspendisse
+              cursus tellus sed augue ultrices, quis tristique nulla sodales.
+              Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse
+              potenti. Quisque malesuada enim sapien, vitae placerat ante
+              feugiat eget. Quisque vulputate odio neque, eget efficitur libero
+              condimentum id. Curabitur id nibh id sem dignissim finibus ac sit
+              amet magna.
+            </div>
+            <div>Tim Smith</div>
+            <div>British Dragon Boat Racing Association</div>
+          </div>
+          <div>
+            <div class="customer-logo">
+              <img src="images/cust1.png" />
+              <img src="images/cust2.png" />
+              <img src="images/client3.png" />
+              <img src="images/client4.png" />
+              <img src="images/client5.png" />
+              <img src="images/cust6.png" />
             </div>
             <div>
-              <div class="customer-logo">
-                <img src="images/cust1.png" />
-                <img src="images/cust2.png" />
-                <img src="images/client3.png" />
-                <img src="images/client4.png" />
-                <img src="images/client5.png" />
-                <img src="images/cust6.png" />
-              </div>
-              <div>
-                <div>Meet all customers</div>
-                <img src="images/Right.png" />
-              </div>
+              <div>Meet all customers</div>
+              <img src="images/Right.png" />
             </div>
           </div>
         </div>
